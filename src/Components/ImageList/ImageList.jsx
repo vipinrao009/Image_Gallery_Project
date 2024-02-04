@@ -12,23 +12,13 @@ function ImageList(){
     const [imageList,setImageList] = useState()
     const [isLoading,setIsLoading] = useState(true)
 
+
     async function downloadImage(){
        
         const res = await axios.get(url)
         const urlResult = res.data.photos
         console.log(urlResult);
-
-        const imagResult = urlResult.map((img) =>{
-            return{
-                image:img.url,
-                title:img.title,
-                id:img.id,
-                description:img.description  
-            }
-        })
-
-        console.log(imagResult);
-        setImageList(imagResult)
+        setImageList(urlResult)
         setIsLoading(false)
     }
     useEffect(()=>{
@@ -39,7 +29,7 @@ function ImageList(){
         <div className="image-list-wrapper">
             <div className="image-wrapper">
                 {
-                  (isLoading ? "Loading...." : imageList.map((image , i)=> <ImageCard image={image.image} key={i}/>))
+                  (isLoading ? "Loading...." : imageList.map((image , i)=> <ImageCard image={image.url} key={i}/>))
                 }
             </div>
 
