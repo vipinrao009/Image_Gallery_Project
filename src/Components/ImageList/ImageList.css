@@ -1,0 +1,11 @@
+.image-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.image-list-wrapper{
+    margin: 1rem auto;
+    
+}

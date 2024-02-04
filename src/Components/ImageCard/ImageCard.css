@@ -1,0 +1,15 @@
+.image-card{
+    flex-basis: 25%;
+    height: 240px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-around;
+
+}
+
+.image{
+    height: 240px;
+    max-height: 80%;
+}
