@@ -10,7 +10,12 @@
 }
 
 .image{
-    height: 240px;
+    height: 210px;
+    width: 210px;
     max-height: 90%;
     border-radius: 8%;
+}
+
+.image-card:hover{
+    background-color: beige;
 }
