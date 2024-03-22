@@ -29,7 +29,7 @@ function ImageList(){
         <div className="image-list-wrapper">
             <div className="image-wrapper">
                 {
-                  (isLoading ? "Loading...." : imageList.map((image , i)=> <ImageCard image={image.url} key={i}/>))
+                  (isLoading ? "Loading...." : imageList.map((image , i)=> <ImageCard image={image.url} id={image.id}  key={i}/>))
                 }
             </div>
 

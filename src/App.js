@@ -1,10 +1,11 @@
 import './App.css';
-import ImageList from './Components/ImageList/ImageList';
+
+import CustomRouter from './routes/CustomRouter';
 
 function App() {
   return (
     <div className="App">  
-     <ImageList/>
+     <CustomRouter/>
     </div>
   );
 }
