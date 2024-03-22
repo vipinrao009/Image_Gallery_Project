@@ -8,7 +8,7 @@ import "./ImageList.css"
 function ImageList(){
     
     const [loading,setLoding] = useState(true)
-    const [url,setUrl] = useState("https://api.slingacademy.com/v1/sample-data/photos")
+    const [url,setUrl] = useState("https://api.slingacademy.com/v1/sample-data/photos?limit=20")
     const [imageList,setImageList] = useState()
     const [isLoading,setIsLoading] = useState(true)
 

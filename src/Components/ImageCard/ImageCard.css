@@ -1,7 +1,7 @@
 .image-card{
     flex-basis: 25%;
     height: 240px;
-    width: 200px;
+    width: 240px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -11,5 +11,6 @@
 
 .image{
     height: 240px;
-    max-height: 80%;
+    max-height: 90%;
+    border-radius: 8%;
 }
