@@ -9,7 +9,6 @@ function CustomRouter (){
                 <Route path="/" element ={<ImageList/>}/>
                 <Route path="/image/:id" element={<ImageDetails/>}/>
             </Routes>
-
         </div>
     )
 }
